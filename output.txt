@@ -1,0 +1,50 @@
+-- The CXX compiler identification is Clang 21.0.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/homebrew/opt/llvm/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/mark/projects/bruh/c++-demo/build
+[3/5] Building CXX object CMakeFiles/ModuleProject.dir/src/main.cpp.o
+FAILED: CMakeFiles/ModuleProject.dir/src/main.cpp.o 
+/opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/opt/llvm/include -nostdinc++ -I/opt/homebrew/opt/llvm/include/c++/v1 -stdlib=libc++ -fmodules -fbuiltin-module-map -fprebuilt-module-path=/Users/mark/projects/bruh/c++-demo/build/modules -std=c++23 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4 -MD -MT CMakeFiles/ModuleProject.dir/src/main.cpp.o -MF CMakeFiles/ModuleProject.dir/src/main.cpp.o.d -o CMakeFiles/ModuleProject.dir/src/main.cpp.o -c /Users/mark/projects/bruh/c++-demo/src/main.cpp
+While building module 'std' imported from /Users/mark/projects/bruh/c++-demo/src/main.cpp:1:
+In file included from <module-includes>:254:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/chrono:1009:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__chrono/formatter.h:29:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__chrono/ostream.h:37:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__format/format_functions.h:21:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__format/format_context.h:28:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__locale:14:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__locale_dir/locale_base_api.h:108:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__locale_dir/support/apple.h:18:
+/opt/homebrew/opt/llvm/include/c++/v1/__locale_dir/support/bsd_like.h:156:91: error: use of undeclared identifier 'MB_CUR_MAX_L'
+  156 | inline _LIBCPP_HIDE_FROM_ABI decltype(MB_CUR_MAX) __mb_len_max(__locale_t __loc) { return MB_CUR_MAX_L(__loc); }
+      |                                                                                           ^
+/Users/mark/projects/bruh/c++-demo/src/main.cpp:1:10: fatal error: could not build module 'std'
+    1 | #include <iostream>
+      |  ~~~~~~~~^
+2 errors generated.
+[4/5] Building CXX object CMakeFiles/ModuleProject.dir/src/structural_eq.cppm.o
+FAILED: CMakeFiles/ModuleProject.dir/src/structural_eq.cppm.o 
+/opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/opt/llvm/include -nostdinc++ -I/opt/homebrew/opt/llvm/include/c++/v1 -stdlib=libc++ -fmodules -fbuiltin-module-map -fprebuilt-module-path=/Users/mark/projects/bruh/c++-demo/build/modules -std=c++23 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4 -MD -MT CMakeFiles/ModuleProject.dir/src/structural_eq.cppm.o -MF CMakeFiles/ModuleProject.dir/src/structural_eq.cppm.o.d -o CMakeFiles/ModuleProject.dir/src/structural_eq.cppm.o -c /Users/mark/projects/bruh/c++-demo/src/structural_eq.cppm
+While building module 'std' imported from /Users/mark/projects/bruh/c++-demo/src/structural_eq.cppm:3:
+In file included from <module-includes>:254:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/chrono:1009:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__chrono/formatter.h:29:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__chrono/ostream.h:37:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__format/format_functions.h:21:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__format/format_context.h:28:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__locale:14:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__locale_dir/locale_base_api.h:108:
+In file included from /opt/homebrew/opt/llvm/include/c++/v1/__locale_dir/support/apple.h:18:
+/opt/homebrew/opt/llvm/include/c++/v1/__locale_dir/support/bsd_like.h:156:91: error: use of undeclared identifier 'MB_CUR_MAX_L'
+  156 | inline _LIBCPP_HIDE_FROM_ABI decltype(MB_CUR_MAX) __mb_len_max(__locale_t __loc) { return MB_CUR_MAX_L(__loc); }
+      |                                                                                           ^
+/Users/mark/projects/bruh/c++-demo/src/structural_eq.cppm:3:10: fatal error: could not build module 'std'
+    3 | #include <concepts>
+      |  ~~~~~~~~^
+2 errors generated.
+ninja: build stopped: subcommand failed.
